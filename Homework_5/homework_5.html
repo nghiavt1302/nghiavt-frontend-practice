@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .header{
+            background-color: cornflowerblue;
+        }
+        .header .header-content{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+         .logo-name{
+            display: flex;
+            align-items: center;
+        }
+        .header .header-content .logo-name h1{
+            font-size: 25px;
+            margin-left: 15px;
+            color: white;
+        }
+        .header .header-content .nav{
+            display: flex;
+            align-items: center;
+        }
+        .header .header-content .nav a{
+            margin-left: 10px;
+            color: white;
+        }
+        .banner {
+            height: 400px;
+            background-image: url('./banner.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .banner .background{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.7;
+            position: absolute;
+        }
+        .banner .banner-content{
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .banner .banner-content p{
+            text-transform: uppercase;
+            font-size: 35px;
+            color: white;
+            animation-name: moveTopDown;
+            animation-duration: 0.5s;
+        }
+        .banner .banner-content button{
+            padding: 10px 35px;
+            border: none;
+            background-color: cornflowerblue;
+            color: white;
+            text-transform: uppercase;
+            margin-top: 20px;
+            transition: background-color 0.25s;
+            border-radius: 5px;
+        }
+        .banner .banner-content button:hover{
+            background-color: brown;
+        }
+        @keyframes moveTopDown{
+            from{
+                transform: translateY(-300px);
+                font-size: 50px;
+            }
+            to{
+                transform: translateY(0);
+                font-size: 35px;
+            }
+        }
+        .description h1{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .description p{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .courses{
+            margin-top: 30px;
+        }
+        .div-title{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .courses .soldout-course .course-cards{
+            display: flex;
+            justify-content: space-between;
+        }
+        .courses .soldout-course .course-cards .card{
+            width: 256px;
+            border: 1px solid grey;
+            border-radius: 3%;
+            overflow: hidden;
+
+        }
+        .courses .soldout-course .course-cards .card .img-card{
+            width: 255px;
+            height: 144px;
+            background-image: url("./abc.png");
+            background-position: center;
+            background-size: cover;
+        }
+        .courses .soldout-course .course-cards .card .course-content .teacher-info{
+            display: flex;
+            padding: 0% 5%;
+            align-items: center;
+        }
+        .courses .soldout-course .course-cards .card .course-content .ten-khoa-hoc{
+            font-size: 20px;
+            padding: 5%;
+        }
+        .courses .soldout-course .course-cards .card .course-content .price{
+            padding: 5%;
+            float: right;
+            font-size: 18px;
+            color: red;
+        }
+        .courses .soldout-course .course-cards .card .course-content .teacher-info img{
+            border-radius: 50%;
+        }
+        .teachers-group .teacher-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .teachers-group .teacher-card{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .teachers-group .teacher-card .teacher-card-content {
+            width: 550px;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            background-color: gainsboro;
+            position: relative;
+        }
+        .teachers-group .teacher-card .teacher-card-content .course-count{
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            background-color: black;
+            color: white;
+            opacity: 0.5;
+            padding: 1%;
+        }
+        .teachers-group .teacher-cards .img-card{
+            width: 255px;
+            height: 180px;
+            background-image: url("./my-tam-teacher.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .teachers-group .teacher-cards .teacher-info{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .teachers-group .teacher-cards .teacher-info p{
+            margin-bottom: 10px;
+        }
+        .teachers-group .teacher-cards .teacher-info .teacher-name{
+            text-transform: uppercase;
+        }
+        .teachers-group .teacher-cards .teacher-info .job-title{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-content content">
+                <div class="logo-name">
+                    <img src="logo.png" alt="" width="50" height="50" style="border-radius: 100%;">
+                    <h1>PlusPlus Academy</h1>
+                </div>
+                <div class="nav">
+                    <a >About us</a>
+                    <a >Courses</a>
+                    <a >Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="background"></div>
+            <div class="banner-content">
+                <p>PlusPlus</p>
+                <button>Register now</button>
+            </div>
+        </div>
+
+        <div class="description content">
+            <h1>PlusPlus, Where you can shine with us!</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+        </div>
+
+        <div class="courses">
+            <div class="soldout-course content">
+                <h1 class="div-title">Soldout course</h1>
+                <div class="course-cards">
+                    <div class="card">
+                        <div class="img-card"></div>
+                        <div class="course-content">
+                            <p class="ten-khoa-hoc">Khóa học lập trình Frontend căn bản</p>
+                            <div class="teacher-info">
+                                <img src="my_tam.jpg" alt="" height="35" width="35">
+                                <p>Phan Thị Mỹ Tâm</p>
+                            </div>
+                            <p class="price">200.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-card"></div>
+                        <div class="course-content">
+                            <p class="ten-khoa-hoc">Khóa học lập trình Frontend căn bản</p>
+                            <div class="teacher-info">
+                                <img src="my_tam.jpg" alt="" height="35" width="35">
+                                <p>Phan Thị Mỹ Tâm</p>
+                            </div>
+                            <p class="price">200.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-card"></div>
+                        <div class="course-content">
+                            <p class="ten-khoa-hoc">Khóa học lập trình Frontend căn bản</p>
+                            <div class="teacher-info">
+                                <img src="my_tam.jpg" alt="" height="35" width="35">
+                                <p>Phan Thị Mỹ Tâm</p>
+                            </div>
+                            <p class="price">200.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-card"></div>
+                        <div class="course-content">
+                            <p class="ten-khoa-hoc">Khóa học lập trình Frontend căn bản</p>
+                            <div class="teacher-info">
+                                <img src="my_tam.jpg" alt="" height="35" width="35">
+                                <p>Phan Thị Mỹ Tâm</p>
+                            </div>
+                            <p class="price">200.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="teachers-group">
+            <h1 class="content div-title">Our teachers</h1>
+            <div class="teacher-cards content">
+                <div class="teacher-card">
+                    <div class="teacher-card-content">
+                        <p class="course-count"> <span>10 khóa học</span></p>
+                        <div class="img-card"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birth">22-12-1992</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card-content">
+                        <p class="course-count"> <span>10 khóa học</span></p>
+                        <div class="img-card"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birth">22-12-1992</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card-content">
+                        <p class="course-count"> <span>10 khóa học</span></p>
+                        <div class="img-card"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birth">22-12-1992</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card-content">
+                        <p class="course-count"> <span>10 khóa học</span></p>
+                        <div class="img-card"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birth">22-12-1992</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+        
+</body>
+</html>

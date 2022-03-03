@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa hoc frontend co ban</title>
+    <style>
+        th, td {
+            border: 1px solid grey;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Khóa học Frontend cơ bản</h1>
+    <a href="#section_1">HTML</a>
+    <br>
+    <a href="#section_2">Danh sách các bài học</a>
+    <br>
+    <a href="#section_3">Bảng điểm</a>
+    <br>
+    <a href="#section_4">Giảng viên</a>
+    <hr>
+    <div id="section_1"></div>
+        <h2>1. HTML</h2>
+            <p>HTML là ngôn ngữ đánh dấu siêu văn bản, là thành phần chính của tất cả các websites. Mô tả, xây dựng cấu trúc websites. Bao gồm tập hợp các thẻ giữ vai trò hiển thị tương ứng với các thành phần giao diện của websites.</p>
+            <h3>1.1 Thuộc tính HTML</h3>
+                <b>Vai trò thuộc tính HTML</b>
+                <ul>
+                    <li>Tất cả các phần tử HTML đều có thể có thuộc tính</li>
+                    <li>Thuộc tính bổ sung thêm thông tin cho phần tử HTML</li>
+                    <li>Thuộc tính được đặt ở phần mở thẻ</li>
+                    <li>Thuộc tính thường tuân theo định dạng key/value</li>
+                </ul>
+            <h3>1.2 Thẻ định dạng văn bản</h3>
+                <p>Thẻ b</p>
+                <blockquote><b>In đậm text</b></blockquote>
+                <p>Thẻ del</p>
+                <blockquote><del>Text bị xóa, gạch ngang</del></blockquote>
+                <p>Thẻ em</p>
+                <blockquote><em>In nghiêng text</em></blockquote>
+                <p>Thẻ i</p>
+                <blockquote><i>In nghiêng text</i></blockquote>
+                <p>Thẻ pre</p>
+                <blockquote><pre>Giữ nguyên định dạng     text</pre></blockquote>
+                <p>Thẻ small</p>
+                <blockquote><small>Hiển thị chữ kích thước nhỏ hơn</small></blockquote>
+                <p>Thẻ strong</p>
+                <blockquote><strong>In đậm text</strong></blockquote>
+                <p>Thẻ sub</p>
+                <blockquote>Hiển thị chữ nhỏ ở dưới dòng cơ bản: log<sub>2</sub>10</blockquote>
+                <p>Thẻ sup</p>
+                <blockquote>Hiển thị chữ nhỏ ở trên so với dòng cơ bản: 10*10 = 10 <sup>2</sup></blockquote>
+                <p>Thẻ a gửi email</p>
+                <blockquote><a href="mailto:example@gmail.com">Send email</a></blockquote>
+    <div id="section_2">
+        <h2>2. Danh sách bài học</h2>
+            <ol>
+                <li>Tổng quan HTML</li>
+                <li>Tổng quan CSS</li>
+                <li>Tổng quan Javascript</li>
+                <li>Tổng quan Jquery</li>
+                <li>Tổng quan Bootstrap</li>
+            </ol>
+    <div id="section_3">        
+        <h2>3. Bảng điểm thi giữa kì các môn</h2>
+            <table>
+                <caption>Student Marks</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Student</th>
+                        <th colspan="4">Marks</th>
+                    </tr>
+                    <tr>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>Javascript</th>
+                        <th>Bootstrap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nguyen Van A</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Nguyen Van B</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+    <div id="section_4">
+        <h2>4. Thông tin giảng viên</h2>
+            <p>Họ tên: Nguyễn Văn A</p>
+            <img src="https://i.pinimg.com/236x/79/34/a2/7934a2db6809c0bd48531ac90dae8bb7.jpg" alt="">        
+</body>
+</html>

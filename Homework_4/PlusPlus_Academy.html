@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlusPlus Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .header {
+            background-color: cornflowerblue;
+            box-shadow: 5px 5px 5px gray;
+            height: 120px;
+        }
+        .header_content{
+            padding-top: 20px;
+            display: inline-block;
+        }
+        .ten {
+            color: white;
+            padding-left: 20px;
+            display: inline;
+            vertical-align: middle;
+            font-family: 'Roboto';
+        }
+        .logo {
+            border-radius: 100%;
+            margin-left: 100px;
+            vertical-align: middle;
+        }
+        .nav-shortcut{
+            float: right;
+            margin-right: 100px;
+            padding-top: 50px;
+        }
+        .slogan {
+            margin-left: 100px;
+            font-family: 'Roboto';
+        }
+        .description{
+            margin-left: 100px;
+            font-family: 'Roboto';
+        }
+        .soldout_course{
+            color: blue;
+            margin-left: 100px;
+            font-family: 'Roboto';
+        }
+        .courses{
+            margin-left: 100px;
+        }
+        .content{
+            width: 270px;
+            border: 1px gray solid;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .content_2{
+            width: 270px;
+            border: 1px gray solid;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .content_3{
+            width: 270px;
+            border: 1px gray solid;
+            display: inline-block;
+        }
+        .course_name{
+            margin: 10px;
+            font-family: 'Roboto';
+        }
+        .teacher_info{
+            margin: 5%;
+        }
+        .price{
+            margin-left: 60%;
+            font-family: 'Roboto';
+        }
+        .Our_teacher{
+            margin-left: 100px;
+        }
+        .teacher_group{
+            margin-left: 100px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .teacher{
+            height: 144px;
+            display: block;
+            position: relative;
+            padding-right: 10px;
+            margin-bottom: 10px;
+        }
+        .course_count{
+            padding-left: 3px;
+            padding-right: 3px;
+            color: white;
+            position: absolute;
+            display: inline-block;
+            margin-bottom: 5px;
+            left: 10px;
+            bottom: 5px;
+            background-color: black;
+            opacity: 0.5;
+            font-family: 'Roboto';
+        }
+        .img_teacher{
+            width: 256px;
+            height: 144px;
+            background-image: url(my_tam.jpg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            float: left;
+            border: 1px solid gainsboro;
+        }
+        .teacher_infos{
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0%;
+            height: 100%;
+            border: 1px solid gainsboro;
+        }
+        .footer{
+            background-color: cornflowerblue;
+            margin-top: 50px;
+        }
+        .content_footer{
+            margin-left: 100px;
+        }
+        .logo_address{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .logo_footer{
+            border-radius: 100%;
+        }
+        .address{
+            color: white;
+            padding-bottom: 20px;
+        }
+        .shortcut_footer{
+            display: inline-block;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "header">
+            <div class="header_content">
+                <img class="logo" src="logo.png" alt="PlusPlus Academy" width="75" height="75">
+                <h1 class="ten">PlusPlus Academy</h1>
+            </div>
+            <div class="nav-shortcut">
+                <nav>
+                    <a href="" style="color: white; font-family: 'Roboto';">Giới thiệu</a>
+                    <a href="" style="color: white; font-family: 'Roboto';">Khóa học</a>
+                    <a href="" style="color: white; font-family: 'Roboto';">Đăng ký</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class= "main">
+            <h1 class="slogan">PlusPlus, where you can shine with us!</h1>
+            <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <h2 class="soldout_course">Soldout course</h2>
+            <div class="courses">
+                <div class="content">
+                    <img class = "img_course" src="abc.png" alt="abc" width="270" height="150" style=";">
+                    <p class="course_name">Khoa hoc lap trinh Frontend can ban</p>
+                    <div class="teacher_info">
+                        <img src="my_tam.jpg" alt="My_tam" width="50" height="50" style="border-radius: 100%;">
+                        <span style="font-family: 'Roboto';">Phan Thi My Tam</span>
+                        <p class="price" style="color: red;">200.000đ</p>
+                    </div>
+                </div>
+                <div class="content_2">
+                    <img class = "img_course" src="abc.png" alt="abc" width="270" height="150" style=";">
+                    <p class="course_name">Khoa hoc lap trinh Frontend can ban</p>
+                    <div class="teacher_info">
+                        <img src="my_tam.jpg" alt="My_tam" width="50" height="50" style="border-radius: 100%;">
+                        <span style="font-family: 'Roboto';">Phan Thi My Tam</span>
+                        <p class="price" style="color: red;">200.000đ</p>
+                    </div>
+                </div>
+                <div class="content_2">
+                    <img class = "img_course" src="abc.png" alt="abc" width="270" height="150" style=";">
+                    <p class="course_name">Khoa hoc lap trinh Frontend can ban</p>
+                    <div class="teacher_info">
+                        <img src="my_tam.jpg" alt="My_tam" width="50" height="50" style="border-radius: 100%;">
+                        <span style="font-family: 'Roboto';">Phan Thi My Tam</span>
+                        <p class="price" style="color: red;">200.000đ</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <section>
+                <h2 class="Our_teacher">Our teachers</h2>
+                <div class="teacher_group">
+                    <div class="teacher">
+                        <p class="course_count">10 khóa học</p>
+                        <div class="img_teacher"></div>
+                        <div class="teacher_infos">
+                            <p class="Teacher_name" style="font-family: 'Roboto';">Phạm Mỹ Tâm</p>
+                            <p class="Job_title" style="font-family: 'Roboto';">Job title: Singer, Dancer,...</p>
+                            <p class="birth" style="font-family: 'Roboto';">22-12-1992</p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <p class="course_count">10 khóa học</p>
+                        <div class="img_teacher"></div>
+                        <div class="teacher_infos">
+                            <p class="Teacher_name" style="font-family: 'Roboto';">Phạm Mỹ Tâm</p>
+                            <p class="Job_title" style="font-family: 'Roboto';">Job title: Singer, Dancer,...</p>
+                            <p class="birth" style="font-family: 'Roboto';">22-12-1992</p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <p class="course_count">10 khóa học</p>
+                        <div class="img_teacher"></div>
+                        <div class="teacher_infos">
+                            <p class="Teacher_name" style="font-family: 'Roboto';">Phạm Mỹ Tâm</p>
+                            <p class="Job_title" style="font-family: 'Roboto';">Job title: Singer, Dancer,...</p>
+                            <p class="birth" style="font-family: 'Roboto';">22-12-1992</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class = "footer">
+            <div class="content_footer">
+                <div class="logo_address">
+                    <img class="logo_footer" src="logo.png" alt="PlusPlus Academy" width="75" height="75">
+                    <h3 class="address" style="font-family: 'Roboto';">13 Nguyen Thai Hoc Street, Ba Dinh, Hanoi.</h3>
+                </div>
+                <div class="shortcut_footer">
+                    <ul>
+                        <li>
+                            <a href="" style="font-family: 'Roboto';">Thôn tin chung</a>
+                        </li>
+                        <li>
+                            <a href="" style="font-family: 'Roboto';">Chính sách</a>
+                        </li>
+                        <li>
+                            <a href="" style="font-family: 'Roboto';">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="" style="font-family: 'Roboto';">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
