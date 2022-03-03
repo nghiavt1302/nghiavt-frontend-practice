@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.header {
+    background-color: #238ffd;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 10px #8e8e8e;
+}
+
+.header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .content .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header .content .logo-container h1 {
+    color: white;
+    margin-left: 15px;
+    font-size: 26px;
+}
+
+
+.nav-container .plus-link {
+    color: white;
+    margin-left: 30px;
+}
+
+.nav-container .plus-link.active {
+    border-bottom: 3px solid white;
+}
+
+.banner-container {
+    height: 400px;
+    background-image: url('./banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-container .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.banner-container .banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.banner-container  .banner-content .register-btn {
+    border: none;
+    background-color: #238ffd;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+}
+
+.banner-container  .banner-content .register-btn:hover {
+    background-color: orange;
+}
+
+.banner-container  .banner-content h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    animation-name: topDown;
+    animation-duration: 1s;
+}
+
+@keyframes topDown {
+    from {
+        transform: translateY(-400px);
+        opacity: 0;
+        font-size: 50px;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        font-size: 35px;
+    }
+}
+
+.main-content {
+    padding: 50px 0;
+}
+
+.main-content .page-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content .page-description {
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.main-content .page-description::before {
+    content: '«';
+    font-size: 50px;
+    color: #238ffd;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.main-content .page-description::after {
+    content: '»';
+    font-size: 50px;
+    color: #238ffd;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards .course-card {
+    width: 24%;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.cards .course-card:hover {
+    box-shadow: 5px 5px 5px #c7c7c7;
+}
+
+.cards .course-card .course-img {
+    height: 144px;
+    background-image: url('./abc.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.cards .course-card .course-content {
+    background-color: #ececec;
+    padding: 15px;
+}
+
+.cards .course-card .course-content .course-name {
+    margin-bottom: 10px;
+}
+
+.cards .course-card .course-content .course-teacher {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cards .course-card .course-content .course-teacher img {
+    margin-right: 15px;
+}
+
+.cards .course-card .course-content .course-price {
+    text-align: right;
+    font-size: 14px;
+    color: red;
+}
+
+.teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.teachers .teacher {
+    display: flex;
+    flex-basis: 48%;
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.teachers .teacher:hover {
+    box-shadow: 5px 5px 5px #c7c7c7;
+}
+
+.teachers .teacher .image-background {
+    background-image: url('./my-tam-teacher.jpg');
+    height: 200px;
+    width: 250px;
+    background-position: center;
+    background-size: 100%;
+    transition: all 1s;
+}
+
+.teachers .teacher .image-background:hover {
+    background-size: 150%;
+}
+
+.teachers .teacher .course-number {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 5px 15px;
+}
+
+.teachers .teacher .teacher-info {
+    padding: 15px;
+    flex-grow: 1;
+    background-color: #ececec;
+}
+
+.teachers .teacher .teacher-info .name {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.teachers .teacher .teacher-info .job-title {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-container .contact-img {
+    width: 50%;
+    height: 400px;
+    background-image: url('./abc.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-container .contact-form {
+    width: 50%;
+    height: 400px;
+    padding: 20px 20px 20px 50px;
+    border: 1px solid #cacaca;
+    border-left: none;
+}
+
+.contact-container .contact-form .title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact-container .contact-form  .form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-container .contact-form  .form-item label {
+    width: 150px;
+}
+
+.contact-container .contact-form  .form-item input {
+    flex-grow: 1;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+}
+
+.contact-container .contact-form .register-now {
+    border: none;
+    background-color: #238ffd;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+    float: right;
+    margin-top: 10px;
+}
+
+.contact-container .contact-form .register-now:hover {
+    background-color: orange;
+}
+
+
+.footer {
+    background-color: #238ffd;
+    padding: 30px 0;
+    box-shadow: 3px 3px 10px #8e8e8e;
+}
+
+.footer .footer-container {
+    display: flex;
+}
+
+.footer .footer-container .address h3 {
+    margin-top: 20px;
+    color: white;
+}
+
+.footer .footer-container .address {
+    width: 50%;
+}
+
+.footer .footer-container .links {
+    width: 50%;
+}
+
+.footer .footer-container .links ul {
+    list-style-type: none;
+}
+
+.footer .footer-container .links ul li{
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) { 
+    .header {
+        padding: 20px;
+    }
+
+    .header .content {
+        flex-direction: column;
+    }
+
+    .header .content .nav-container {
+        margin-top: 20px;
+    }
+
+    .main-content .page-description {
+        padding: 0 15px;
+    }
+
+    .main-content .page-description::before {
+        display: none;
+    } 
+
+    .main-content .page-description::after {
+        display: none;
+    }
+
+    .cards {
+        padding: 0 15px;
+    }
+
+    .cards .course-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .teachers {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container .contact-img {
+        width: 100%;
+    }
+
+    .contact-container .contact-form {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer .footer-container .links {
+        margin-top: 20px;
+    }
+
+    .contact-container .contact-form .form-item label {
+        width: 100px;
+    }
+
+    .footer .footer-container {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity7</title>
+</head>
+<body>
+    <script>
+        let checkYear = function(number) {
+            if(number % 400 == 0){
+                console.log(number +" leapYear");
+            }else if(number % 4 ==0 && number % 100 !=0) {
+                console.log(number +" leapYear");
+            }else {
+                console.log(number + " !leapYear");
+            }
+        }
+
+        let checkMonth = function(number){
+            switch(number){
+                case 1:
+                    console.log("January");
+                    break;
+                case 2:
+                    console.log("February");
+                    break;
+                case 3:
+                    console.log("March");
+                    break;
+                case 4:
+                    console.log("April");
+                    break;    
+                case 5:
+                    console.log("May");
+                    break;
+                case 6:
+                    console.log("June");
+                    break;
+                case 7:
+                    console.log("July");
+                    break;
+                case 8:
+                    console.log("August");
+                    break;
+                case 9:
+                    console.log("September");
+                    break;
+                case 10:
+                    console.log("October");
+                    break;
+                case 11:
+                    console.log("Novenber");
+                    break;
+                case 12:
+                    console.log("December");
+                    break;
+                default:
+                    console.log("Dose not exist!");
+            }
+            
+        }
+
+
+        checkYear(2000);
+        checkYear(2002);
+        checkYear(2003);
+        checkYear(2004);
+        checkMonth(1);
+        checkMonth(53);
+        checkMonth(90);
+        checkMonth(12);
+        checkMonth(10);
+    </script>
+</body>
+</html>
